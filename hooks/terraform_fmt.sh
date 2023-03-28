@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -eo pipefail
+set -x
 
 # globals variables
 # shellcheck disable=SC2155 # No way to assign to readonly variable in separate lines
