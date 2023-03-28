@@ -37,7 +37,11 @@ function per_dir_hook_unique_part {
   local -r dir_path="$1"
   shift
   local -a -r args=("$@")
-
+  
+  echo $dir_path
+  echo $args
+  echo "${args[@]}"
+  echo terraform fmt "${args[@]}"
   # pass the arguments to hook
   terraform fmt "${args[@]}"
 
